@@ -11,3 +11,8 @@
 # Author
 1. v2d27 (programmer).
 2. DoubleA (designer).
+
+
+# Date publish
+
+November 11, 2018
