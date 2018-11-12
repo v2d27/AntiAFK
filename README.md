@@ -1,3 +1,6 @@
+![wallpaper](https://raw.githubusercontent.com/v2d27/AntiAFK/master/logo.bmp)
+=======
+
 # AntiAFK
 - Download file AntiAFK.exe to use in 32 bit operating system.
 - Download file AntiAFK_x64.exe to use in 64 bit operating system.
