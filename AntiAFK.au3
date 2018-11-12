@@ -14,7 +14,7 @@
 FileInstall("logo.bmp", "logo.bmp")
 OnAutoItExitRegister("AutoItExit")
 Func AutoItExit()
-	FileDelete("logo.bmp")
+	;If @Compiled Then FileDelete("logo.bmp")
 EndFunc
 
 #Region Global const variable
@@ -97,6 +97,8 @@ While 1
 		EndIf
 	EndIf
 
+	Sleep(10)
+
 	; Playing mouse proccess
 	If TimerDiff($hTime) >= $iTimeRepeat Then
 		If $IsCanPlayMouse Then
@@ -104,6 +106,8 @@ While 1
 		EndIf
 		$hTime = TimerInit()
 	EndIf
+
+	Sleep(10)
 
 
 	; Event from GUI
@@ -121,6 +125,7 @@ While 1
 								"Contact me: ducduc08@gmail.com" )
 	EndSwitch
 
+	Sleep(20)
 
 	; Event from hot Key Ctrl + F12
 	If BitAND(_WinAPI_GetAsyncKeyState($VK_F12), $iBitMask) Then
@@ -130,7 +135,6 @@ While 1
 			Sleep(500)
 		EndIf
 	EndIf
-
 
 WEnd
 
